@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <title>Бреслер</title>
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="https://www.bresler.ru/" target="_blank" aria-label="Сайт компании Бреслер">
+            <svg viewBox="0 0 240 42" width="120" height="21">
+                <use href="icons.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <nav class="header__navigation">
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="#">
+                        Задачи
+                    </a>
+                </li>
+                <li class="header__navigation-item active">
+                    <a class="header__navigation-link" href="#">
+                        Поездки
+                    </a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="#">
+                        Счета
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__actions">
+            <a class="logout" href="#" aria-label="Выйти из профиля">
+                Медведкин Д.А.
+                <svg viewBox="0 0 16 16" width="16" height="16">
+                    <use href="icons.svg#icon-logout"></use>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section-trip">
+            <div class="section-trip__header">
+                <h2 class="section-trip__title">
+                    Мои поездки
+                </h2>
+                <button class="button">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="icons.svg#icon-plus"></use>
+                    </svg>
+                    Оформить поездку
+                </button>
+            </div>
+            <div class="section-trip__table">
+                <div class="section-trip__table-filter">
+                    <div class="date">
+                        <div class="date__part since">
+                            <label for="firstDay">Период с:</label>
+                            <input id="firstDay" type="date">
+                        </div>
+                        <div class="date__part finish">
+                            <label for="finalDay">по:</label>
+                            <input id="finalDay" type="date">
+                        </div>
+                    </div>
+                    <input type="search">
+                    <button>
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="icons.svg#icon-cancel"></use>
+                        </svg>
+                        Сбросить всё
+                    </button>
+                    <div class="archive">
+                        <input id="archiveInput" type="checkbox">
+                        <label for="archiveInput">Показать архивные поездки</label>
+                    </div>
+                </div>
+                <div class="section-trip__table-items">
+                    <div class="table-item">
+
+                    </div>
+                    <div class="table-item">
+                        
+                    </div>
+                    <div class="table-item">
+                        
+                    </div>
+                    <div class="table-item">
+                        
+                    </div>
+                    <div class="table-item">
+                        
+                    </div>
+                    <div class="table-item">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
