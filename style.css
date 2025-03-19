@@ -335,18 +335,18 @@ svg * {
     gap: 2em;
 }
 
-.test {
+.table-col {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
 
-.test_summ {
+.table-col_summ {
     min-width: 115px;
     align-items: end;
 }
 
-.test_city {
+.table-col_city {
     flex-grow: 1;
     p {
         max-width: 500px;
@@ -355,13 +355,13 @@ svg * {
         text-overflow: ellipsis;
     }
 
-    .test__value {
+    .table-col__value {
         display: flex;
         align-items: center;
         gap: 4px;
     }
 
-    .test__info {
+    .table-col__info {
         position: relative;
         display: inline-flex;
         align-items: center;
@@ -407,26 +407,26 @@ svg * {
     }
 }
 
-.test__label {
+.table-col__label {
     font-size: 12px;
     color: var(--color-grey);
 }
 
-.test__value {
+.table-col__value {
     color: var(--color-text);
 }
 
-.test_number {
-    .test__value {
+.table-col_number {
+    .table-col__value {
         width: min-content;
         color: var(--color-accent);
         border-bottom: 1px solid rgb(14 115 246 / 0.2);
     }
 }
 
-.test_status {
+.table-col_status {
     align-items: center;
-    .test__value {
+    .table-col__value {
         span {
             padding: 4px 8px;
             border-radius: 10px;
