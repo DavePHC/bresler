@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <title>Бреслер</title>
 </head>
@@ -64,15 +64,22 @@
                     <div class="date">
                         <div class="date__part since">
                             <label for="firstDay">Период с:</label>
-                            <input id="firstDay" type="date">
+                            <input class="general-input" id="firstDay" type="date" placeholder="Выбрать...">
                         </div>
                         <div class="date__part finish">
                             <label for="finalDay">по:</label>
-                            <input id="finalDay" type="date">
+                            <input class="general-input" id="finalDay" type="date" placeholder="Выбрать...">
                         </div>
                     </div>
-                    <input type="search">
-                    <button>
+                    <div class="input-wrapper">
+                        <input class="general-input general-input_search" type="search" placeholder="Поиск...">
+                        <button class="general-input__icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="icons.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="button-cancel">
                         <svg viewBox="0 0 16 16" width="16" height="16">
                             <use href="icons.svg#icon-cancel"></use>
                         </svg>
@@ -85,22 +92,309 @@
                 </div>
                 <div class="section-trip__table-items">
                     <div class="table-item">
-
+                        <div class="test test_number">
+                            <div class="test__label">
+                                № поездки
+                            </div>
+                            <div class="test__value">
+                                000115
+                            </div>
+                        </div>
+                        <div class="test">
+                            <div class="test__label">
+                                Дата поездки
+                            </div>
+                            <div class="test__value">
+                                22.02.2024 - 27.02.2024
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, план
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, факт
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_city">
+                            <div class="test__label">
+                                Город
+                            </div>
+                            <div class="test__value">
+                                Москва, Ярославль, Ижевск, Владимир
+                            </div>
+                        </div>
+                        <div class="test test_status">
+                            <div class="test__label">
+                                Статус
+                            </div>
+                            <div class="test__value">
+                                <span>Документы</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="table-item">
-                        
+                        <div class="test test_number">
+                            <div class="test__label">
+                                № поездки
+                            </div>
+                            <div class="test__value">
+                                000115
+                            </div>
+                        </div>
+                        <div class="test">
+                            <div class="test__label">
+                                Дата поездки
+                            </div>
+                            <div class="test__value">
+                                22.02.2024 - 27.02.2024
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, план
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, факт
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_city">
+                            <div class="test__label">
+                                Город
+                            </div>
+                            <div class="test__value">
+                                <p>Москва, Ярославль, Ижевск, Владимир, Белгород, Архангельск, Новодвинск, Дубайск</p>
+                                <button class="test__info" data-text="Москва, Ярославль, Ижевск, Владимир, Белгород, Архангельск, Новодвинск, Дубайск">
+                                    <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="icons.svg#icon-info"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="test test_status">
+                            <div class="test__label">
+                                Статус
+                            </div>
+                            <div class="test__value">
+                                <span>Документы</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="table-item">
-                        
+                        <div class="test test_number">
+                            <div class="test__label">
+                                № поездки
+                            </div>
+                            <div class="test__value">
+                                000115
+                            </div>
+                        </div>
+                        <div class="test">
+                            <div class="test__label">
+                                Дата поездки
+                            </div>
+                            <div class="test__value">
+                                22.02.2024 - 27.02.2024
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, план
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, факт
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_city">
+                            <div class="test__label">
+                                Город
+                            </div>
+                            <div class="test__value">
+                                Москва, Ярославль, Ижевск, Владимир
+                            </div>
+                        </div>
+                        <div class="test test_status">
+                            <div class="test__label">
+                                Статус
+                            </div>
+                            <div class="test__value">
+                                <span>Документы</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="table-item">
-                        
+                        <div class="test test_number">
+                            <div class="test__label">
+                                № поездки
+                            </div>
+                            <div class="test__value">
+                                000115
+                            </div>
+                        </div>
+                        <div class="test">
+                            <div class="test__label">
+                                Дата поездки
+                            </div>
+                            <div class="test__value">
+                                22.02.2024 - 27.02.2024
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, план
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, факт
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_city">
+                            <div class="test__label">
+                                Город
+                            </div>
+                            <div class="test__value">
+                                Москва, Ярославль, Ижевск, Владимир
+                            </div>
+                        </div>
+                        <div class="test test_status">
+                            <div class="test__label">
+                                Статус
+                            </div>
+                            <div class="test__value">
+                                <span>Документы</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="table-item">
-                        
+                        <div class="test test_number">
+                            <div class="test__label">
+                                № поездки
+                            </div>
+                            <div class="test__value">
+                                000115
+                            </div>
+                        </div>
+                        <div class="test">
+                            <div class="test__label">
+                                Дата поездки
+                            </div>
+                            <div class="test__value">
+                                22.02.2024 - 27.02.2024
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, план
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, факт
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_city">
+                            <div class="test__label">
+                                Город
+                            </div>
+                            <div class="test__value">
+                                Москва, Ярославль, Ижевск, Владимир
+                            </div>
+                        </div>
+                        <div class="test test_status">
+                            <div class="test__label">
+                                Статус
+                            </div>
+                            <div class="test__value">
+                                <span>Документы</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="table-item">
-                        
+                        <div class="test test_number">
+                            <div class="test__label">
+                                № поездки
+                            </div>
+                            <div class="test__value">
+                                000115
+                            </div>
+                        </div>
+                        <div class="test">
+                            <div class="test__label">
+                                Дата поездки
+                            </div>
+                            <div class="test__value">
+                                22.02.2024 - 27.02.2024
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, план
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_summ">
+                            <div class="test__label">
+                                Сумма, факт
+                            </div>
+                            <div class="test__value">
+                                29 400,00
+                            </div>
+                        </div>
+                        <div class="test test_city">
+                            <div class="test__label">
+                                Город
+                            </div>
+                            <div class="test__value">
+                                Москва, Ярославль, Ижевск, Владимир
+                            </div>
+                        </div>
+                        <div class="test test_status">
+                            <div class="test__label">
+                                Статус
+                            </div>
+                            <div class="test__value">
+                                <span>Документы</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
